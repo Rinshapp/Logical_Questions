@@ -1,17 +1,25 @@
 
-// ------right triangle
 
-let str = '';
-let num = 5;
+let limit=30;
+let str ='';
+let isPrime = true;
 
-for(let i=0;i<=num;i++){
-    for(let j=0;j<num-1;j++){
-        str = str +' ';
+for(let i=2;i<limit;i++){
+    isPrime=true;
+
+    for(let x=2;x<i;x++){
+        if(i%x==0){
+            isPrime=false;
+            break;
+        }
     }
-    for(let k=0;k<i;k++){
-        str = str +'*';
+    if(isPrime){
+        str=str+' 0 ';
+    }else{
+        str=str+(` ${i} `);  
     }
-    str = str + '\n';
 }
 console.log(str);
+
+//-----------------------------
 

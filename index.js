@@ -1,21 +1,26 @@
-// -----prime or not
 
-const n=4;
-let isPrime = true;
+// --Hollow square
 
+let str1 = '';
+let num1= 5;
+for(let i=0;i<num1;i++){
+    for(let j=0;j<num1;j++){
+        if(i === 0 || i === num-1){
 
-for(let i=2; i<n; i++){
-    if(n % i == 0){
-        isPrime = false;
-        break;
+            str1 = str1 + '*';
+        }
+        else{
+            if(j === 0 || j === num1-1){
+                str1 = str1 + '*';
+            }
+            else{
+
+                str1 = str1 +' ';
+            }
+        }
     }
+    str1 = str1 +'\n';
 }
-if(isPrime){
-    console.log(`${n} is prime`);
-}
-else{
-    console.log(`${n} is not prime`);
-}
+console.log(str1);
 
-// -----------------------------------
-
+// ----------

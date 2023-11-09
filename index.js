@@ -1,26 +1,17 @@
 
-// --Hollow square
+// ------right triangle
 
-let str1 = '';
-let num1= 5;
-for(let i=0;i<num1;i++){
-    for(let j=0;j<num1;j++){
-        if(i === 0 || i === num-1){
+let str = '';
+let num = 5;
 
-            str1 = str1 + '*';
-        }
-        else{
-            if(j === 0 || j === num1-1){
-                str1 = str1 + '*';
-            }
-            else{
-
-                str1 = str1 +' ';
-            }
-        }
+for(let i=0;i<=num;i++){
+    for(let j=0;j<num-1;j++){
+        str = str +' ';
     }
-    str1 = str1 +'\n';
+    for(let k=0;k<i;k++){
+        str = str +'*';
+    }
+    str = str + '\n';
 }
-console.log(str1);
+console.log(str);
 
-// ----------

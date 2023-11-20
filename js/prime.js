@@ -1,4 +1,6 @@
 
+//input an array and find prime numbers then make the numbers zero
+
 
 let limit=30;
 let str ='';
@@ -20,6 +22,3 @@ for(let i=2;i<limit;i++){
     }
 }
 console.log(str);
-
-//-----------------------------
-
